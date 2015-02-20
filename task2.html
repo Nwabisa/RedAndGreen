@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+#linkie {
+	border: 5px solid black;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+}
+#Nwabisa {
+	border: 5px solid black;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+}
+
+</style>
+<body>
+<div id="linkie">yeh</div>
+<button id="green">Make green</button>
+<div id="Nwabisa">nayy</div>
+<button id="red">Make red</button>
+
+</body>
+<script type="text/javascript">
+var myButton = document.getElementById('green');
+var myButton2 = document.getElementById('red');
+var mySquare = document.getElementById('linkie');
+var mySquare2 = document.getElementById('Nwabisa');
+myButton.addEventListener('click', function(){
+         mySquare.style.backgroundColor = 'green'
+})
+myButton2.addEventListener('click', function(){
+mySquare2.style.backgroundColor = 'red'
+})
+</script>
+</html>
