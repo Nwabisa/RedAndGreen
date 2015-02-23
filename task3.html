@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>header!</title>
+<link rel="stylesheet" type="text/css" href="task3.css">
+<script type="text/javascript" stc="task3.js"></script>
+<style>
+#linkie {
+	width: 300px;
+	height: 300px;
+	border: 5px solid black;
+}
+</style>
+</head>
+<body>
+<div id="linkie">I am cool</div>
+<button id="green">Make green</button>
+<button id="red">Make red</button>
+</body>
+<script type="text/javascript">
+var myButton = document.getElementById('green');
+var myButton2 = document.getElementById('red');
+var mySquare = document.getElementById('linkie');
+myButton.addEventListener('click', function() {
+	mySquare.style.backgroundColor = 'green'
+})
+var mySquare = document.getElementById('linkie');
+myButton2.addEventListener('click', function() {
+	mySquare.style.backgroundColor = 'red'
+})
+</script>
+</html>
