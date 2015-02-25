@@ -1,0 +1,16 @@
+(function () {
+
+if(document.getElementById('id').style.backgroundColor = 'blue') {
+	window.alert('success')
+}
+else {
+	window.alert('fail')
+}
+setBackgroundColor('mySquare, 'red);
+if(document.getElementById('id').style.backgroundColor = 'red') {
+window.alert('success')
+}
+	else {
+	window.alert('fail')
+}
+})();
