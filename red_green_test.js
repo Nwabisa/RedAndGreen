@@ -1,13 +1,17 @@
-var RedOrGreen = function(id){
-			this.id = id;
+var rg = new RedOrGreen("myElement");
 
-this.makeGreen = function(id){
-document.getElementById(id).style.backgroundColor ='green';
+rg.makeGreen();
 
-}
-this.makeRed = function(id){
-document.getElementById(id).style.backgroundColor ='red';
+if (document.getElementById('myElement').style.backgroundColor === "green") {
+	alert("Box is green");
+} else{
+	alert("Box not green");
+};
 
-}
+rg.makeRed();
 
+if (document.getElementById('myElement').style.backgroundColor === "red") {
+	alert("Box is red");
+} else{
+	alert("Box not red");
 };

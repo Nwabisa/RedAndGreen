@@ -1,19 +1,13 @@
-  var rg = new RedOrGreen("myElement");
+ function RedOrGreen(id){
 
+	this.makeGreen = function(){
+		document.getElementById(id).style.backgroundColor ='green';
 
-   rg.makeGreen("myElement");
-   if(document.getElementById("myElement").style.backgroundColor === 'green'){
-   	window.alert("ok");
-   }else{
-  window.alert("not ok");
+	}
 
-   }
+	this.makeRed = function(){
+		document.getElementById(id).style.backgroundColor ='red';
 
-   
-   rg.makeRed("myElement");
-   
-if(document.getElementById("myElement").style.backgroundColor === 'red'){
-   	window.alert("ok");
-   }else{
-  window.alert("not ok");
-}
+	}
+
+};
