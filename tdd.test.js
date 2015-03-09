@@ -1,6 +1,6 @@
 TestMyCode.run("testing hello world function, function(assert") {
 	var result = helloWorld();
-	// is the result as we expected?
+	// is the result as we expectedo
 	assert.equals("hello world", result);
 });
 
